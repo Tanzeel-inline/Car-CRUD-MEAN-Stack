@@ -1,0 +1,69 @@
+.aligner {
+	display: flex;
+  	align-items: center;
+	flex-direction: column;
+	align-content: center;
+	margin-top: 50px;
+}
+h4 {
+	font-weight: bold;
+}
+.label-number {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.input-vehicle {
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+.input-vehicle:hover {
+	border: 2px solid #000000;
+}
+.button-delete-vehicle {
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 10px;
+	border: 1px solid #000000;
+}
+.button-delete-vehicle:hover {
+	border: 2px solid #000000;
+	border-style: inset;
+}
+table {
+	margin-top: 10px;
+}
+.input-vehicle {
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	margin: 5px;
+}
+.input-vehicle:hover {
+	border: 2px solid #000000;
+}
+
+.input-vehicle:placeholder-shown {
+	opacity: 0.3;
+}
+
+.td {
+	padding: 10px;
+	margin: 10px;
+}
+.seller-row {
+	text-align: center;
+}
+.button-update-vehicle {
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 10px;
+	border: 1px solid #000000;
+}
+.button-update-vehicle:hover {
+	border: 2px solid #000000;
+	border-style: inset;
+}

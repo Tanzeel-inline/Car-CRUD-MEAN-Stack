@@ -1,0 +1,86 @@
+
+<div class="aligner">
+<table>
+	<tr>
+		<td><label class="label-number" > Title:</label></td>
+		<td><input type="text" class="input-vehicle" #vehicleTitle></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Type:</label></td>
+		<td><input type="text" class="input-vehicle" #vehicleType></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Model:</label></td>
+		<td><input type="text" class="input-vehicle" #vehicleModel></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Number:</label></td>
+		<td><input type="text" class="input-vehicle" #vehicleNumber></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Color:</label></td>
+		<td><input type="text" class="input-vehicle" #vehicleColor></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Price:</label></td>
+		<td><input type="number" class="input-vehicle" #vehiclePrice></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Registered City:</label></td>
+		<td><input type="text" class="input-vehicle" #registeredCity></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > engineCapacity:</label></td>
+		<td><input type="number" class="input-vehicle" #vehicleCapacity></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Mileage:</label></td>
+		<td><input type="number" class="input-vehicle" #vehicleMileage></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Rating: </label></td>
+		<td><input type="number" class="input-vehicle" #vehicleRating></td>
+	</tr>
+	<tr>
+		<td colspan="2" class="seller-row"><label class="label-number" > Seller Information </label></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Name: </label></td>
+		<td><input type="text" class="input-vehicle" #sellerName></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Phone: </label></td>
+		<td><input type="number" class="input-vehicle" #sellerPhone></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Email: </label></td>
+		<td><input type="email" class="input-vehicle" #sellerEmail></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Address: </label></td>
+		<td><input type="text" class="input-vehicle" #sellerAddress></td>
+	</tr>
+	<tr>
+		<td><label class="label-number" > Comments: </label></td>
+		<td><input type="text" class="input-vehicle" #sellerComments></td>
+	</tr>
+</table>
+<button class="button-create-vehicle" (click)="getVehicleData(vehicleTitle.value, vehicleType.value, vehicleModel.value, vehicleNumber.value, vehicleColor.value, vehiclePrice.value, registeredCity.value, vehicleCapacity.value, vehicleMileage.value, vehicleRating.value, sellerName.value, sellerPhone.value, sellerEmail.value, sellerAddress.value, sellerComments.value)">Add</button>
+</div>
+<!--
+<label class="label-number" > Title: <input type="text" class="input-vehicle" #vehicleTitle> </label>
+<label class="label-number" > Type: <input type="text" class="input-vehicle" #vehicleType> </label>
+<label class="label-number" > Model: <input type="text" class="input-vehicle" #vehicleModel> </label>
+<label class="label-number" > Number: <input type="text" class="input-vehicle" #vehicleNumber> </label>
+<label class="label-number" > Color: <input type="text" class="input-vehicle" #vehicleColor> </label>
+<label class="label-number" > Price: <input type="number" class="input-vehicle" #vehiclePrice> </label>
+<label class="label-number" > Registered City: <input type="text" class="input-vehicle" #registeredCity> </label>
+<label class="label-number" > engineCapacity: <input type="number" class="input-vehicle" #vehicleCapacity> </label>
+<label class="label-number" > Mileage: <input type="number" class="input-vehicle" #vehicleMileage> </label>
+<label class="label-number" > Rating: <input type="number" class="input-vehicle" #vehicleRating> </label>
+<h3>Seller Details</h3>
+<label class="label-number"> Name: <input type="text" class="input-vehicle" #sellerName> </label>
+<label class="label-number"> Phone: <input type="number" class="input-vehicle" #sellerPhone> </label>
+<label class="label-number"> Email: <input type="email" class="input-vehicle" #sellerEmail> </label>
+<label class="label-number"> Address: <input type="text" class="input-vehicle" #sellerAddress> </label>
+<label class="label-number"> Comments: <input type="text" class="input-vehicle" #sellerComments> </label>-->

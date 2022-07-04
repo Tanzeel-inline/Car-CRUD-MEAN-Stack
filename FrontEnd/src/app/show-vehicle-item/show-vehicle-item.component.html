@@ -1,0 +1,31 @@
+<div class="task" (click)="onDetails(task)">
+	<div class="{{wrapperClass}}">
+		<div class="header">
+			<h1>{{task.VehicleTitle}} <fa-icon [ngStyle]="{'color' : 'white'}" [icon]="faChevron"></fa-icon></h1>
+		</div>
+		<div class="sidebar">
+			<img [src]="image" alt="Goku Ultra Instinct">
+		</div>
+		<div class="content">
+			<h3><label>Type:</label> {{task.VehicleType}} </h3>
+			<h3><label>Vehicle Number:</label> {{task.VehicleNumber}}</h3>
+			
+			<h3><label>Registered City:</label> {{task.registeredCity}}</h3>
+			<h3> <label>Date Added:</label> {{task.addedDate}}</h3>
+			<h3><label>Location:</label> {{task.registeredCity}}</h3>
+			<h3><label>Rating:</label> {{task.Rating}}</h3>
+			<h3 [hidden] ="!faIcon"><label>Model:</label> {{task.VehicleModel}}</h3>
+			<h3 [hidden] ="!faIcon"><label>Vehicle Number:</label> {{task.VehicleNumber}}</h3>
+			<h3 [hidden] ="!faIcon"><label>Mileage:</label> {{task.Mileage}}</h3>
+			<h3 [hidden] ="!faIcon"><label>Color:</label> {{task.VehicleColor}}</h3>
+			<h3 [hidden] ="!faIcon"><label>Price:</label> {{task.VehiclePrice}}</h3>
+			<h3 [hidden] ="!faIcon"><label>Engine Capacity:</label> {{task.engineCapacity}}</h3>
+		</div>
+		<div class="footer" [hidden] ="!faIcon">
+			<h3><label>Number:</label> {{task.sellerPhone}}</h3>
+			<h3><label>Email:</label> {{task.sellerEmail}}</h3>
+			<h3><label>Location:</label> {{task.sellerAddress}}</h3>
+			<h3><label>Comments:</label> {{task.sellerComment}}</h3>
+		</div>
+	</div>
+</div>

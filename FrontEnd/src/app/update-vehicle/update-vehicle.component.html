@@ -1,0 +1,70 @@
+<div class="aligner">
+	<label class="label-number" > Vehicle Number: <input type="text" placeholder="MH-12-1235" class="input-vehicle" #vehicleNumber> </label>
+	<button class="button-delete-vehicle" (click)="vehicleNum(vehicleNumber.value)">Find Vehicle</button>
+	<table>
+		<tr>
+			<td><label class="label-number" > Title:</label></td>
+			<td><input type="text" class="input-vehicle" #vehicleTitle [ngModel]="vehicle.VehicleTitle"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Type:</label></td>
+			<td><input type="text" class="input-vehicle" #vehicleType [ngModel]="vehicle.VehicleType"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Model:</label></td>
+			<td><input type="text" class="input-vehicle" #vehicleModel [ngModel]="vehicle.VehicleModel"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Number:</label></td>
+			<td><input type="text" class="input-vehicle" #vehicleNumber [ngModel]="vehicle.VehicleNumber" disabled></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Color:</label></td>
+			<td><input type="text" class="input-vehicle" #vehicleColor [ngModel]="vehicle.VehicleColor"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Price:</label></td>
+			<td><input type="number" class="input-vehicle" #vehiclePrice [ngModel]="vehicle.VehiclePrice"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Registered City:</label></td>
+			<td><input type="text" class="input-vehicle" #registeredCity [ngModel]="vehicle.registeredCity"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > engineCapacity:</label></td>
+			<td><input type="number" class="input-vehicle" #vehicleCapacity [ngModel]="vehicle.engineCapacity"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Mileage:</label></td>
+			<td><input type="number" class="input-vehicle" #vehicleMileage [ngModel]="vehicle.Mileage"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Rating: </label></td>
+			<td><input type="number" class="input-vehicle" #vehicleRating [ngModel]="vehicle.Rating"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="seller-row"><label class="label-number" > Seller Information </label></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Name: </label></td>
+			<td><input type="text" class="input-vehicle" #sellerName [ngModel]="vehicle.sellerName"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Phone: </label></td>
+			<td><input type="number" class="input-vehicle" #sellerPhone [ngModel]="vehicle.sellerPhone"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Email: </label></td>
+			<td><input type="email" class="input-vehicle" #sellerEmail [ngModel]="vehicle.sellerEmail"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Address: </label></td>
+			<td><input type="text" class="input-vehicle" #sellerAddress [ngModel]="vehicle.sellerAddress"></td>
+		</tr>
+		<tr>
+			<td><label class="label-number" > Comments: </label></td>
+			<td><input type="text" class="input-vehicle" #sellerComments [ngModel]="vehicle.sellerComment"></td>
+		</tr>
+	</table>
+	<button class="button-update-vehicle" (click)="getVehicleData(vehicleTitle.value, vehicleType.value, vehicleModel.value, vehicleNumber.value, vehicleColor.value, vehiclePrice.value, registeredCity.value, vehicleCapacity.value, vehicleMileage.value, vehicleRating.value, sellerName.value, sellerPhone.value, sellerEmail.value, sellerAddress.value, sellerComments.value)">Update</button>
+</div>
